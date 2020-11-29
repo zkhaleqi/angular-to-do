@@ -7,7 +7,7 @@ import { TodoService } from '../../services/todo.service';
   styleUrls: ['./todo-item.component.css'],
 })
 export class TodoItemComponent implements OnInit {
-  @Input() todo: Todo;
+  @Input() todo!: Todo;
   @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();
   constructor(private todoService: TodoService) {}
   // constructor(todo: Todo) {
